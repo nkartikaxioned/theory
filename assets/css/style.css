@@ -79,7 +79,7 @@ sub { bottom: -.25em; }
 }
 
 .cf:after { clear: both; }
-.cf { *zoom: 1; }
+/* .cf { *zoom: 1; } */
 
 /*for all*/
 body {
@@ -106,23 +106,89 @@ li {
 .font-color-blue{color: #83A8D2;}
 .first-letter-caps::first-letter{text-transform: uppercase; }
 .caps-first{text-transform: capitalize;}
+.caps{ text-transform: uppercase;}
+.font-sizee{ font-size: 14px;}
 
+.h4{
+  font-size: 32px;
+  text-align: center;
+}
 /* common class style end */
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 85%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
 
+header{ 
+  width: 100%;
+  min-height: 450px;
+  position: relative;
+}
 
+header div figure{ 
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute; 
+  top: 0;
+  left: 0;
+}
 
+header figure img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+.structure{
+  padding: 50px 0 70px 0;
+  justify-content: space-between;
+  display: flex;
+}
 
+.structure h1{ 
+  font-weight: bold;
+  font-size: 18px;
+}
+.structure h1 a{ padding: 5px;}
 
+.structure h1 a:hover{ 
+  color: #5386C1;
+  transition: 0.2s;
+}
+
+nav ul{ display: flex; }
+
+nav li a{  padding: 6px 20px; }
+
+nav li a:hover{ 
+ color: #5386C1;
+ transition: 0.2s;
+}
+
+.hamburger{ 
+  width: 3%;
+    line-height: 0.5;
+    
+}
+
+.bar{
+  border-bottom: 1px solid #000;
+  text-indent: -9999px;
+  display: block;
+}
+
+div h2{
+  padding: 0 0 30px 0;
+  font-size: 46px;
+  text-align: center;
+}
+.welcome p{ text-align: center;}
 /*=================================
   Header styling ends here
 =================================*/  
@@ -131,12 +197,116 @@ li {
   main styling starts here
 =================================*/
 
+/* home section style start */
+.home{ padding: 70px 0 70px 0;}
+.home ul{ display: flex;}
 
+.home ul li:not(:first-child){
+   border-left: 1px solid #C4C4C4; 
 
+  }
 
+  .home ul li:not(:first-child){
+    padding: 0 0 0 40px;
+  }
 
+.home div h3{
+  width: 50%;
+  line-height: 1.3;
+  font-size: 18px;
+}  
 
+.home div p{
+  width: 85%;
+  padding: 20px 0 20px 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
 
+.button a{
+  padding: 10px 15px;
+  font-size: 13px;
+  border: 1px solid #fff;
+}
+
+.button a:hover{
+  border: 1px solid #000;
+  background: #fff;
+  color: #5386C1;
+}
+/* home section style end */
+
+/* generic section style start */
+
+.generic h4{ 
+  font-weight: lighter;
+  padding: 80px 0 15px 0;
+}
+
+.genericspan1{ 
+  display: block;
+  text-align: center;
+  padding: 0 0 50px 0;
+}
+
+.generic ul{ 
+  display: flex; 
+  justify-content: space-between;
+  padding: 0 0 100px 0;
+}
+.generic ul li{
+   width: 22%;
+   border: 0.5px solid #C4C4C4;
+  }
+
+.generic li figure{ 
+  display: flex;
+  justify-content: center;
+}
+
+.generic figure img{ 
+  width: 60%;
+  border-radius: 90px;
+  margin: 42px 0 20px 0;
+}
+
+.generic span{ 
+  display: block;
+  text-align: center;
+  line-height: 1.5;
+}
+.generic span:last-child{ padding: 0 0 50px 0;}
+/* generic section style end */
+/* Element section style start */
+.elements{ 
+  padding: 0 0 90px;
+  border-bottom: 1px solid #c4c4c5;
+}
+
+.elements ul{ 
+  display: flex;
+  justify-content: space-between;
+}
+
+.elements ul li{ width: 47%;}
+
+.elements h4{padding: 100px 0 10px 0;}
+
+.elements span{
+  display: block;
+   text-align: center;
+   padding: 0 0 60px 0;
+  }
+
+  .elements li figure{ padding: 0 0 30px 0;}
+
+  .elements h5{ font-size: 19px;}
+
+  .elements li p{
+    padding: 20px 0;
+    line-height: 1.3;
+  }
+/* Element section style end */
 
 /*=================================
   main styling ends here
@@ -146,12 +316,35 @@ li {
   footer styling starts here
 =================================*/ 
 
+footer{ padding: 30px 0 ;}
 
+footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 
+footer p{ 
+  font-size: 10px;
+  LINE-HEIGHT: 1.5;
+}
 
+.socialmedia a::before{
+  font-family: "fontAwesome";
+ text-indent: 0;
+ float: left;
+}
 
-
-
+.socialmedia a{
+  text-indent: -9999px;
+  float: left;
+  padding: 0 5px;
+}
+.socialmedia a:hover{ color: #000;}
+.socialmedia a[title="Facebook"]::before{ content:"\f09a" ;}
+.socialmedia a[title="Twitter"]::before{ content:"\f099" ;}
+.socialmedia a[title="Linkedin"]::before{ content:"\f08c" ;}
+.socialmedia a[title="Pininterest"]::before{ content:"\f0d2" ;}
+.socialmedia a[title="Vimeo"]::before{ content:"\f194" ;}
  /*=================================
   footer styling ends here
 =================================*/ 
