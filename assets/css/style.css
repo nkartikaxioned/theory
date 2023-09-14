@@ -96,7 +96,18 @@ li {
   display: inline-block;
   list-style-type: none;
 }
+/* common class style start */
+.background-white{background-color: #fff;}
+.background-color-blue{background-color: #5386C1;}
+.font-color-white{color: #fff;}
+.font-color-light-grey{ color: #706D72;}
+.font-color-mediumgrey{color: #C4C4C4;}
+.font-color-grey1{color: #9CB9DB;}
+.font-color-blue{color: #83A8D2;}
+.first-letter-caps::first-letter{text-transform: uppercase; }
+.caps-first{text-transform: capitalize;}
 
+/* common class style end */
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
