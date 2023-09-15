@@ -227,6 +227,7 @@ div h2{
   padding: 10px 15px;
   font-size: 13px;
   border: 1px solid #fff;
+  transition: 0.2s;
 }
 
 .button a:hover{
@@ -338,6 +339,7 @@ footer p{
   text-indent: -9999px;
   float: left;
   padding: 0 5px;
+  transition: 0.2s;
 }
 .socialmedia a:hover{ color: #000;}
 .socialmedia a[title="Facebook"]::before{ content:"\f09a" ;}
