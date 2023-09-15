@@ -108,9 +108,9 @@ li {
 .caps-first{text-transform: capitalize;}
 .caps{ text-transform: uppercase;}
 .font-sizee{ font-size: 14px;}
-
+.font-size-20{font-size: 20px;}
 .h4{
-  font-size: 32px;
+  font-size: 34px;
   text-align: center;
 }
 /* common class style end */
@@ -153,7 +153,7 @@ header figure img{
 
 .structure h1{ 
   font-weight: bold;
-  font-size: 18px;
+  font-size: 23px;
 }
 .structure h1 a{ padding: 5px;}
 
@@ -174,7 +174,7 @@ nav li a:hover{
 .hamburger{ 
   width: 3%;
     line-height: 0.5;
-    
+   display: none; 
 }
 
 .bar{
@@ -300,7 +300,7 @@ div h2{
 
   .elements li figure{ padding: 0 0 30px 0;}
 
-  .elements h5{ font-size: 19px;}
+  .elements h5{ font-size: 25px;}
 
   .elements li p{
     padding: 20px 0;
@@ -350,9 +350,345 @@ footer p{
 =================================*/ 
 
 /*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+/* media query for 1440px starts here */
+@media only screen and (max-width: 1440px) {
+  /* common class style starts */
+  .font-sizee{ font-size: 19px;}
 
+.h4{
+  font-size: 44px;
+  text-align: center;
+}
 
+.font-size-20 { font-size: 21px; }
+  /* common class style ends */
+  /* header section style start */
+  
+  header{ 
+    width: 100%;
+    min-height: 500px;
+  }
+  
 
+  .structure{
+    padding: 56px 0 60px 0;
+    justify-content: space-between;
+    display: flex;
+  }
+  
+  .structure h1{ 
+    font-weight: bold;
+    font-size: 28px;
+  }
+
+  .structure h1 a{ padding: 8px;}
+  
+  nav li a{  padding: 15px 24px; }
+
+  div h2{
+    padding: 0 0 32px 0;
+    font-size: 55px;
+    text-align: center;
+  }
+  /* header section style ends */
+  /* main section start */
+  /* home section style start */
+  .home{ padding: 90px 0 90px 0;}
+
+.home div h3{
+  width: 58%;
+    line-height: 1.3;
+    font-size: 24px;
 }  
+
+.home div p{
+  width: 85%;
+  padding: 20px 0 20px 0;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.button a{
+  padding: 12px 18px;
+  font-size: 15px;
+  border: 1px solid #fff;
+}
+
+  /* home section style end */
+  /* main section end */
+  /* footer section style start */
+  footer{ padding: 40px 0 ;}
+
+  footer p{ 
+    font-size: 14px;
+    LINE-HEIGHT: 1.5;
+  }
+
+  .socialmedia a{
+    padding: 0 8px;
+  }
+  /* footer section style end */
+} 
+/* media query for 1440px ends here */
+
+/* media query for 1024px starts */
+@media only screen and (max-width:1024px) {
+  /* media query for 1024px starts */
+.font-sizee{ font-size: 15px;}
+
+.h4{
+  font-size: 31px;
+  text-align: center;
+}
+/* common class style end */
+/*=================================
+  Header styling starts here
+=================================*/
+
+header{ 
+  width: 100%;
+  min-height: 425px;
+}
+
+.structure{
+  padding: 45px 0 65px 0;
+  justify-content: space-between;
+  display: flex;
+}
+
+.structure h1{ 
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.structure h1 a{ padding: 4px; }
+nav li a{  padding: 5px 18px; }
+
+div h2{
+  padding: 0 0 30px 0;
+  font-size: 46px;
+  text-align: center;
+}
+
+/*=================================
+  Header styling ends here
+=================================*/ 
+/*=================================
+  main styling starts here
+=================================*/
+
+/* home section style start */
+
+.home{ padding: 60px 0 60px 0;}
+.home ul li:not(:first-child){ padding: 0 0 0 30px; }
+
+.home div h3{
+  line-height: 1.2;
+  font-size: 18px;
+}  
+
+.home div p{
+  width: 85%;
+  padding: 18px 0 18px 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.button a{
+  padding: 8px 13px;
+  font-size: 14px;
+  border: 1px solid #fff;
+}
+
+/* home section style end */
+/* generic section style start */
+
+.generic h4{  padding: 70px 0 13px 0; }
+.genericspan1{  padding: 0 0 40px 0; }
+.generic ul{  padding: 0 0 80px 0; }
+
+.generic ul li{
+   width: 22%;
+   border: 0.5px solid #C4C4C4;
+  }
+
+.generic figure img{  margin: 40px 0 15px 0;}
+.generic span{  line-height: 1.3; }
+.generic span:last-child{ padding: 0 0 40px 0;}
+
+/* generic section style end */
+/* Element section style start */
+.elements{ padding: 0 0 80px; }
+.elements h4{padding: 90px 0 8px 0;}
+.elements span{ padding: 0 0 50px 0; }
+.elements li figure{ padding: 0 0 25px 0;}
+.elements h5{ font-size: 18px;}
+
+.elements li p{
+ padding: 18px 0;
+ line-height: 1.3;
+}
+/* Element section style end */
+
+/*=================================
+  main styling ends here
+=================================*/
+/*=================================
+  footer styling starts here
+=================================*/ 
+
+footer{ padding: 20px 0 ;}
+
+footer p{ 
+  font-size: 12px;
+  LINE-HEIGHT: 1.3;
+}
+
+.socialmedia a{ padding: 0 4px; }
+ /*=================================
+  footer styling ends here
+=================================*/ 
+}
+
+/* media query for 1024px ends */
+
+
+/*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
+  /* common class start */
+  .font-sizee{ font-size: 15px;}
+  /* common class end */
+  /* header style start */
+  header{  min-height: 350px; }
+  nav{display: none;}
+
+  .hamburger{
+    width: 5%;
+    display: block;
+  }
+
+  div h2{ padding: 0 0 20px 0; }
+  /* header style end */
+  /* ============================= */
+  /* main section style start */
+  /* home section stayle start */
+  .home{ padding: 50px 0 50px 0;}
+  .home ul{ flex-wrap: wrap; }
+
+  .home ul li:not(:first-child){
+    border-top: 1px solid #C4C4C4; 
+    border-left: 0;
+   }
+
+   .home ul li:not(:first-child){ padding: 20px 0 0 0; }
+   .home ul li:not(:last-child){ padding: 0 0 20px 0; }
+   .secondli{ padding: 20px 0 0 0; }
+
+.home div h3{ 
+  width: 100%; 
+  text-align: center;
+  font-size: 25px;
+}  
+
+.home div p{
+  width: 100%;
+  padding: 20px 0 20px 0;
+  font-size: 15px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.button a{
+  width: 95%;
+  padding: 11px 11px;
+  font-size: 16px;
+  border: 1px solid #fff;
+  text-align: center;
+}
+
+.button a:hover{
+  border: 1px solid #000;
+  background: #fff;
+  color: #5386C1;
+}
+  /* home section style end */
+  /* generic section style start */
+
+.generic h4{  padding: 40px 0 10px 0; }
+
+.genericspan1{ 
+   padding: 0 0 20px 0;
+   font-size: 16px;
+  }
+
+.generic ul{  padding: 0 0 40px 0;}
+.generic ul{flex-direction: column;}
+
+.generic ul li{
+  width: 100%;
+   margin: 0 0 30px;
+}
+
+.generic figure img{ 
+  width: 40%;
+  border-radius: 125px;
+  margin: 50px 0 32px 0;
+}
+
+.generic span:last-child{ padding: 0 0 48px 0;}
+
+/* generic section style end */
+/* Element section style start */
+
+.elements{ padding: 0 0 8px; }
+.elements ul{ flex-direction: column; }
+
+.elements ul li{ 
+  width: 100%;
+  margin: 0 0 35px 0;
+}
+
+.elements h4{padding: 40px 0 10px 0;}
+.elements span{ padding: 0 0 35px 0; }
+.elements li figure{ padding: 0 0 35px 0;}
+
+.elements h5{ 
+  font-size: 19px;
+  text-align: center;
+}
+
+  .elements li p{
+    padding: 35px 0;
+    line-height: 1.3;
+    text-align: center;
+  }
+/* Element section style end */
+
+/*=================================
+  main styling ends here
+=================================*/
+/*=================================
+  footer styling starts here
+=================================*/ 
+
+footer{ padding: 30px 0 25px 0;}
+
+footer .wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  align-items: center;
+}
+
+footer p{ 
+  font-size: 12px;
+  LINE-HEIGHT: 1.5;
+}
+footer div ul{ padding: 0 0 20px 0;}
+}
+/*=================================
+  footer styling ends here
+=================================*/ 
+
+ 
+/*media query for 768px ends here*/
