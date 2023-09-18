@@ -195,57 +195,20 @@ li {
 }
 
 /* common class style start */
-.background-white {
-  background-color: #fff;
-}
+.background-white { background-color: #fff }
 
-.background-color-blue {
-  background-color: #5386C1;
-}
-
-.font-color-white {
-  color: #fff;
-}
-
-.font-color-light-grey {
-  color: #706D72;
-}
-
-.font-color-mediumgrey {
-  color: #C4C4C4;
-}
-
-.font-color-grey1 {
-  color: #9CB9DB;
-}
-
-.font-color-blue {
-  color: #83A8D2;
-}
-
-.first-letter-caps::first-letter {
-  text-transform: uppercase;
-}
-
-.caps-first {
-  text-transform: capitalize;
-}
-
-.caps {
-  text-transform: uppercase;
-}
-
-.font-sizee {
-  font-size: 17px;
-}
-
-.font-size-20 {
-  font-size: 20px;
-}
-
-.paddingg {
-  padding-top: 20px;
-}
+.background-color-blue { background-color: #5386C1; }
+.font-color-white { color: #fff; }
+.font-color-light-grey { color: #706D72; }
+.font-color-mediumgrey { color: #C4C4C4; }
+.font-color-grey1 { color: #9CB9DB; }
+.font-color-blue { color: #83A8D2; }
+.first-letter-caps::first-letter { text-transform: uppercase; }
+.caps-first { text-transform: capitalize; }
+.caps { text-transform: uppercase; }
+.font-sizee { font-size: 17px; }
+.font-size-20 { font-size: 20px; }
+.paddingg { padding-top: 20px; }
 
 .h4 {
   font-size: 34px;
@@ -265,36 +228,26 @@ li {
   Header styling starts here
 =================================*/
 header {
-  position: fixed;
   width: 100%;
   top: 3%;
   z-index: 1;
+  position: fixed;
 }
 
 .structure {
-  justify-content: space-between;
   display: flex;
+  justify-content: space-between;
 }
 
 .structure h1 {
+  display: flex;
+  align-items: center;
   font-weight: bold;
   font-size: 23px;
-  display: flex;
-    align-items: center;
 }
 
-.structure h1 a:hover {
-  color: #5386C1;
-  transition: 0.2s;
-}
-
-nav ul {
-  display: flex;
-}
-
-nav li a {
-  padding: 6px 20px;
-}
+nav ul { display: flex; }
+nav li a { padding: 6px 20px; }
 
 nav li a:hover {
   color: #5386C1;
@@ -303,14 +256,14 @@ nav li a:hover {
 
 .hamburger {
   width: 3%;
-  line-height: 0.5;
   display: none;
+  line-height: 0.5;
 }
 
 .bar {
+  display: block;
   border-bottom: 1px solid #000;
   text-indent: -9999px;
-  display: block;
 }
 
 div h2 {
@@ -320,9 +273,7 @@ div h2 {
 }
 
 .banner p,
-span {
-  text-align: center;
-}
+span { text-align: center; }
 
 
 /*=================================
@@ -362,21 +313,10 @@ span {
 
 /* home section style start */
 
-.home {
-  padding: 70px 0 70px 0;
-}
-
-.home ul {
-  display: flex;
-}
-
-.home ul li:not(:first-child) {
-  border-left: 1px solid #C4C4C4;
-}
-
-.home ul li:not(:first-child) {
-  padding: 0 0 0 40px;
-}
+.home { padding: 70px 0 70px 0; }
+.home ul { display: flex; }
+.home ul li:not(:first-child) { border-left: 1px solid #C4C4C4; }
+.home ul li:not(:first-child) { padding: 0 0 0 40px; }
 
 .home div h3 {
   line-height: 1.3;
@@ -411,7 +351,7 @@ span {
 }
 
 .generic ul { display: flex; }
-.generic ul li:not(:last-child){margin-right: 5%;}
+.generic ul li:not(:last-child) {margin-right: 5%;}
 
 .generic ul li {
   width: 22%;
@@ -449,13 +389,8 @@ span {
   justify-content: space-between;
 }
 
-.elements ul li {
-  width: 47%;
-}
-
-.elements h4 {
-  padding: 0 0 10px 0;
-}
+.elements ul li { width: 47%; }
+.elements h4 { padding: 0 0 10px 0; }
 
 .elements span {
   display: block;
@@ -463,13 +398,8 @@ span {
   padding: 0 0 60px 0;
 }
 
-.elements li figure {
-  padding: 0 0 30px 0;
-}
-
-.elements h5 {
-  font-size: 25px;
-}
+.elements li figure { padding: 0 0 30px 0; }
+.elements h5 { font-size: 25px; }
 
 .elements li p {
   padding: 20px 0;
@@ -486,9 +416,7 @@ span {
   footer styling starts here
 =================================*/
 
-footer {
-  padding: 30px 0;
-}
+footer { padding: 30px 0; }
 
 footer .wrapper {
   display: flex;
@@ -513,25 +441,11 @@ footer p {
   transition: 0.2s;
 }
 
-.socialmedia a[title="Facebook"]::before {
-  content: "\f09a";
-}
-
-.socialmedia a[title="Twitter"]::before {
-  content: "\f099";
-}
-
-.socialmedia a[title="Linkedin"]::before {
-  content: "\f08c";
-}
-
-.socialmedia a[title="Pininterest"]::before {
-  content: "\f0d2";
-}
-
-.socialmedia a[title="Vimeo"]::before {
-  content: "\f194";
-}
+.socialmedia a[title="Facebook"]::before { content: "\f09a"; }
+.socialmedia a[title="Twitter"]::before { content: "\f099"; }
+.socialmedia a[title="Linkedin"]::before { content: "\f08c"; }
+.socialmedia a[title="Pininterest"]::before { content: "\f0d2"; }
+.socialmedia a[title="Vimeo"]::before { content: "\f194"; }
 
 /*=================================
   footer styling ends here
@@ -544,30 +458,22 @@ footer p {
 @media only screen and (max-width: 1440px) {
 
   /* common class style starts */
-  .font-sizee {
-    font-size: 19px;
-  }
+  .font-sizee { font-size: 19px; }
 
   .h4 {
     font-size: 44px;
     text-align: center;
   }
 
-  .font-size-20 {
-    font-size: 21px;
-  }
+  .font-size-20 { font-size: 21px; }
 
   /* common class style ends */
 
   /* header section style start */
 
-  .structure h1 {
-    font-size: 28px;
-  }
+  .structure h1 { font-size: 28px; }
 
-  nav li a {
-    padding: 15px 24px;
-  }
+  nav li a { padding: 15px 24px; }
 
   div h2 {
     padding: 0 0 32px 0;
@@ -580,9 +486,7 @@ footer p {
 
   /* home section style start */
 
-  .home {
-    padding: 90px 0 90px 0;
-  }
+  .home { padding: 90px 0 90px 0; }
 
   .home div h3 {
     line-height: 1.3;
@@ -608,18 +512,14 @@ footer p {
 
   /* footer section style start */
 
-  footer {
-    padding: 40px 0;
-  }
+  footer { padding: 40px 0; }
 
   footer p {
     font-size: 14px;
     LINE-HEIGHT: 1.5;
   }
 
-  .socialmedia a {
-    padding: 0 8px;
-  }
+  .socialmedia a { padding: 0 8px; }
 
   /* footer section style end */
 }
@@ -632,13 +532,8 @@ footer p {
 
   /* media query for 1024px starts */
 
-  .font-sizee {
-    font-size: 15px;
-  }
-
-  .h4 {
-    font-size: 31px;
-  }
+  .font-sizee { font-size: 15px; }
+  .h4 { font-size: 31px; }
 
   /* common class style end */
 
@@ -646,17 +541,9 @@ footer p {
   Header styling starts here
 =================================*/
 
-  .structure h1 {
-    font-size: 19px;
-  }
-
-  .structure h1 a {
-    padding: 4px;
-  }
-
-  nav li a {
-    padding: 5px 18px;
-  }
+  .structure h1 { font-size: 19px; }
+  .structure h1 a { padding: 4px; }
+  nav li a { padding: 5px 18px; }
 
   div h2 {
     padding: 0 0 30px 0;
@@ -676,13 +563,8 @@ footer p {
 /* banner section style end */
   /* home section style start */
 
-  .home {
-    padding: 60px 0 60px 0;
-  }
-
-  .home ul li:not(:first-child) {
-    padding: 0 0 0 30px;
-  }
+  .home { padding: 60px 0 60px 0; }
+  .home ul li:not(:first-child) { padding: 0 0 0 30px; }
 
   .home div h3 {
     line-height: 1.2;
@@ -706,47 +588,24 @@ footer p {
 
   /* generic section style start */
 
-  .generic h4 {
-    padding: 70px 0 13px 0;
-  }
-
-  .genericspan1 {
-    padding: 0 0 40px 0;
-  }
-
-  .generic ul {
-    padding: 0 0 80px 0;
-  }
+  .generic h4 { padding: 0 0 13px 0; }
+  .genericspan1 { padding: 0 0 40px 0; }
 
   .generic ul li {
     width: 22%;
     border: 0.5px solid #C4C4C4;
   }
 
-  .generic span {
-    line-height: 1.3;
-  }
-
+  .generic span { line-height: 1.3; }
 
   /* generic section style end */
 
   /* Element section style start */
 
-  .elements {
-    padding: 40px 0 80px;
-  }
-
-  .elements span {
-    padding: 0 0 50px 0;
-  }
-
-  .elements li figure {
-    padding: 0 0 25px 0;
-  }
-
-  .elements h5 {
-    font-size: 18px;
-  }
+  .elements { padding: 40px 0 80px; }
+  .elements span { padding: 0 0 50px 0; }
+  .elements li figure { padding: 0 0 25px 0; }
+  .elements h5 { font-size: 18px; }
 
   .elements li p {
     padding: 18px 0;
@@ -762,9 +621,7 @@ footer p {
   footer styling starts here
 =================================*/
 
-  footer {
-    padding: 20px 0;
-  }
+  footer { padding: 20px 0; }
 
   footer p {
     font-size: 12px;
@@ -785,8 +642,13 @@ footer p {
 
 /*media query for min 768px starts here*/
 
-@media only screen and (min-width:768px){
+@media only screen and (min-width:980px){
   /* hover style start */
+  
+  .structure h1 a:hover {
+    color: #5386C1;
+    transition: 0.2s;
+  }
 
   .button a:hover {
     border: 1px solid #5386C1;
@@ -794,9 +656,7 @@ footer p {
     color: #5386C1;
   }
 
-  .socialmedia a:hover {
-    color: #000;
-  }
+  .socialmedia a:hover { color: #000; }
 }
 
 /*media query for min 768px ends here*/
@@ -806,9 +666,7 @@ footer p {
 
   /* common class start */
 
-  .font-sizee {
-    font-size: 15px;
-  }
+  .font-sizee { font-size: 15px; }
 
   /* common class end */
 
@@ -821,10 +679,7 @@ footer p {
     display: block;
   }
   .hamburger:hover { cursor: pointer; }
-  div h2 {
-    padding: 0 0 20px 0;
-  }
-
+  div h2 { padding: 0 0 20p}
   /* header style end */
   /* ============================= */
 
@@ -838,30 +693,17 @@ footer p {
 
   /* home section stayle start */
 
-  .home {
-    padding: 50px 0 50px 0;
-  }
-
-  .home ul {
-    flex-wrap: wrap;
-  }
+  .home { padding: 20px 0 50px 0; }
+  .home ul { flex-wrap: wrap; }
 
   .home ul li:not(:first-child) {
     border-top: 1px solid #C4C4C4;
     border-left: 0;
   }
 
-  .home ul li:not(:first-child) {
-    padding: 20px 0 0 0;
-  }
-
-  .home ul li:not(:last-child) {
-    padding: 0 0 20px 0;
-  }
-
-  .secondli {
-    padding: 20px 0 0 0;
-  }
+  .home ul li:not(:first-child) { padding: 20px 0 0 0; }
+  .home ul li:not(:last-child) { padding: 0 0 20px 0; }
+  .secondli { padding: 20px 0 0 0; }
 
   .home div h3 {
     width: 100%;
@@ -886,11 +728,6 @@ footer p {
     text-align: center;
   }
 
-  .button a:hover {
-    border: 1px solid #000;
-    background: #fff;
-    color: #5386C1;
-  }
 
 .secondli{padding-top: 20px;}
 
@@ -898,17 +735,11 @@ footer p {
 
   /* generic section style start */
 
-  .generic h4 {
-    padding: 40px 0 10px 0;
-  }
+  .generic h4 { padding: 0 0 10px 0; }
 
   .genericspan1 {
     padding: 0 0 20px 0;
     font-size: 16px;
-  }
-
-  .generic ul {
-    padding: 0 0 40px 0;
   }
 
   .generic ul {
@@ -929,18 +760,12 @@ footer p {
    
   }
 
-
   /* generic section style end */
 
   /* Element section style start */
 
-  .elements {
-    padding: 50px 0 8px;
-  }
-
-  .elements ul {
-    flex-direction: column;
-  }
+  .elements { padding: 50px 0 8px; }
+  .elements ul { flex-direction: column; }
 
   .elements ul li {
     width: 100%;
@@ -949,15 +774,10 @@ footer p {
     display: flex;
     flex-direction: column;
 }
-  }
+  
 
-  .elements span {
-    padding: 0 0 35px 0;
-  }
-
-  .elements li figure {
-    padding: 0 0 35px 0;
-  }
+  .elements span { padding: 0 0 35px 0; }
+  .elements li figure { padding: 0 0 10px 0; }
 
   .elements h5 {
     font-size: 19px;
@@ -965,7 +785,7 @@ footer p {
   }
 
   .elements li p {
-    padding: 35px 0;
+    padding: 10px 0;
     line-height: 1.3;
     text-align: center;
   }
@@ -979,9 +799,7 @@ footer p {
   footer styling starts here
 =================================*/
 
-  footer {
-    padding: 30px 0 25px 0;
-  }
+  footer { padding: 30px 0 25px 0; }
 
   footer .wrapper {
     display: flex;
@@ -995,9 +813,7 @@ footer p {
     LINE-HEIGHT: 1.5;
   }
 
-  footer div ul {
-    padding: 0 0 20px 0;
-  }
+  footer div ul { padding: 0 0 20px 0; }
 
 }
 
@@ -1009,7 +825,5 @@ footer p {
 /*media query for 768px ends here*/
 /*media query for 480px ends here*/
 @media only screen and (max-width: 480px) {
-  div h2 {
-    font-size: 45px;
-  }
+  div h2 { font-size: 45px; }
 }
