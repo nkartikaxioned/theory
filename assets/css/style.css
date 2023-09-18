@@ -397,11 +397,6 @@ span {
   transition: 0.2s;
 }
 
-.button a:hover {
-  border: 1px solid #5386C1;
-  background: #fff;
-  color: #5386C1;
-}
 
 /* home section style end */
 
@@ -516,10 +511,6 @@ footer p {
   float: left;
   padding: 0 5px;
   transition: 0.2s;
-}
-
-.socialmedia a:hover {
-  color: #000;
 }
 
 .socialmedia a[title="Facebook"]::before {
@@ -742,11 +733,7 @@ footer p {
   /* Element section style start */
 
   .elements {
-    padding: 0 0 80px;
-  }
-
-  .elements h4 {
-    padding: 80px 0 8px 0;
+    padding: 40px 0 80px;
   }
 
   .elements span {
@@ -798,8 +785,18 @@ footer p {
 
 /*media query for min 768px starts here*/
 
-@media only screen and (min-width){
+@media only screen and (min-width:768px){
   /* hover style start */
+
+  .button a:hover {
+    border: 1px solid #5386C1;
+    background: #fff;
+    color: #5386C1;
+  }
+
+  .socialmedia a:hover {
+    color: #000;
+  }
 }
 
 /*media query for min 768px ends here*/
@@ -928,7 +925,7 @@ footer p {
 
   .generic figure img {
     width: 65%;
-    border-radius: 125px;
+    border-radius: 145px;
    
   }
 
@@ -938,7 +935,7 @@ footer p {
   /* Element section style start */
 
   .elements {
-    padding: 0 0 8px;
+    padding: 50px 0 8px;
   }
 
   .elements ul {
@@ -948,10 +945,10 @@ footer p {
   .elements ul li {
     width: 100%;
     margin: 0 0 35px 0;
-  }
-
-  .elements h4 {
-    padding: 40px 0 10px 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
   }
 
   .elements span {
