@@ -8,13 +8,87 @@
    v2.0 | 20110126
    License: none (public domain)
    ========================================================================== */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
-ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
-figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,17 +98,30 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
 /* Force scrollbar */
-html { overflow-y: scroll; }
+html {
+  overflow-y: scroll;
+}
 
 /* Align radios and text inputs with their label */
 
-input[type='radio'] { vertical-align: text-bottom; }
+input[type='radio'] {
+  vertical-align: text-bottom;
+}
 
 /* Hand cursor on clickable input elements */
 label,
@@ -50,7 +137,9 @@ strong {
   font-size: inherit;
 }
 
-em { font-style: italic; }
+em {
+  font-style: italic;
+}
 
 img {
   width: 100%;
@@ -66,8 +155,13 @@ sup {
   line-height: 0;
 }
 
-sup { top: -.7em; }
-sub { bottom: -.25em; }
+sup {
+  top: -.7em;
+}
+
+sub {
+  bottom: -.25em;
+}
 
 /* 1.2. Clear Fix
    ========================== */
@@ -78,7 +172,10 @@ sub { bottom: -.25em; }
   content: " ";
 }
 
-.cf:after { clear: both; }
+.cf:after {
+  clear: both;
+}
+
 /* .cf { *zoom: 1; } */
 
 /*for all*/
@@ -87,226 +184,303 @@ body {
   font-family: sans-serif;
 }
 
-a { 
+a {
   display: inline-block;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 li {
   display: inline-block;
   list-style-type: none;
 }
+
 /* common class style start */
-.background-white{background-color: #fff;}
-.background-color-blue{background-color: #5386C1;}
-.font-color-white{color: #fff;}
-.font-color-light-grey{ color: #706D72;}
-.font-color-mediumgrey{color: #C4C4C4;}
-.font-color-grey1{color: #9CB9DB;}
-.font-color-blue{color: #83A8D2;}
-.first-letter-caps::first-letter{text-transform: uppercase; }
-.caps-first{text-transform: capitalize;}
-.caps{ text-transform: uppercase;}
-.font-sizee{ font-size: 14px;}
-.font-size-20{font-size: 20px;}
-.h4{
+.background-white {
+  background-color: #fff;
+}
+
+.background-color-blue {
+  background-color: #5386C1;
+}
+
+.font-color-white {
+  color: #fff;
+}
+
+.font-color-light-grey {
+  color: #706D72;
+}
+
+.font-color-mediumgrey {
+  color: #C4C4C4;
+}
+
+.font-color-grey1 {
+  color: #9CB9DB;
+}
+
+.font-color-blue {
+  color: #83A8D2;
+}
+
+.first-letter-caps::first-letter {
+  text-transform: uppercase;
+}
+
+.caps-first {
+  text-transform: capitalize;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.font-sizee {
+  font-size: 17px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.paddingg {
+  padding-top: 20px;
+}
+
+.h4 {
   font-size: 34px;
   text-align: center;
 }
+
 /* common class style end */
+
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 85%; 
+  width: 85%;
   margin: 0 auto;
 }
+
 /*=================================
   Header styling starts here
 =================================*/
-
-header{ 
+header {
+  position: fixed;
   width: 100%;
-  min-height: 450px;
-  position: relative;
+  top: 3%;
+  z-index: 1;
 }
 
-header div figure{ 
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  position: absolute; 
-  top: 0;
-  left: 0;
-}
-
-header figure img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.structure{
-  padding: 50px 0 70px 0;
+.structure {
   justify-content: space-between;
   display: flex;
 }
 
-.structure h1{ 
+.structure h1 {
   font-weight: bold;
   font-size: 23px;
+  display: flex;
+    align-items: center;
 }
-.structure h1 a{ padding: 5px;}
 
-.structure h1 a:hover{ 
+.structure h1 a:hover {
   color: #5386C1;
   transition: 0.2s;
 }
 
-nav ul{ display: flex; }
-
-nav li a{  padding: 6px 20px; }
-
-nav li a:hover{ 
- color: #5386C1;
- transition: 0.2s;
+nav ul {
+  display: flex;
 }
 
-.hamburger{ 
+nav li a {
+  padding: 6px 20px;
+}
+
+nav li a:hover {
+  color: #5386C1;
+  transition: 0.2s;
+}
+
+.hamburger {
   width: 3%;
-    line-height: 0.5;
-   display: none; 
+  line-height: 0.5;
+  display: none;
 }
 
-.bar{
+.bar {
   border-bottom: 1px solid #000;
   text-indent: -9999px;
   display: block;
 }
 
-div h2{
+div h2 {
   padding: 0 0 30px 0;
   font-size: 46px;
   text-align: center;
 }
-.welcome p{ text-align: center;}
+
+.banner p,
+span {
+  text-align: center;
+}
+
+
 /*=================================
   Header styling ends here
-=================================*/  
+=================================*/
 
 /*=================================
   main styling starts here
 =================================*/
+/* banner section style start */
+
+.banner {
+  width: 100%;
+  min-height: 450px;
+  position: relative;
+  align-items: center;
+  display: flex;
+
+}
+
+.banner figure {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.banner figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* banner section style end */
 
 /* home section style start */
-.home{ padding: 70px 0 70px 0;}
-.home ul{ display: flex;}
 
-.home ul li:not(:first-child){
-   border-left: 1px solid #C4C4C4; 
+.home {
+  padding: 70px 0 70px 0;
+}
 
-  }
+.home ul {
+  display: flex;
+}
 
-  .home ul li:not(:first-child){
-    padding: 0 0 0 40px;
-  }
+.home ul li:not(:first-child) {
+  border-left: 1px solid #C4C4C4;
+}
 
-.home div h3{
-  width: 50%;
+.home ul li:not(:first-child) {
+  padding: 0 0 0 40px;
+}
+
+.home div h3 {
   line-height: 1.3;
   font-size: 18px;
-}  
+}
 
-.home div p{
+.home div p {
   width: 85%;
   padding: 20px 0 20px 0;
   font-size: 13px;
   line-height: 1.6;
 }
 
-.button a{
+.button a {
   padding: 10px 15px;
   font-size: 13px;
   border: 1px solid #fff;
   transition: 0.2s;
 }
 
-.button a:hover{
-  border: 1px solid #000;
+.button a:hover {
+  border: 1px solid #5386C1;
   background: #fff;
   color: #5386C1;
 }
+
 /* home section style end */
 
 /* generic section style start */
+.generic{ padding: 50px 0;}
+.generic h4 { font-weight: lighter; }
 
-.generic h4{ 
-  font-weight: lighter;
-  padding: 80px 0 15px 0;
-}
-
-.genericspan1{ 
+.genericspan1 {
   display: block;
   text-align: center;
-  padding: 0 0 50px 0;
+  padding: 15px 0 50px;
 }
 
-.generic ul{ 
-  display: flex; 
-  justify-content: space-between;
-  padding: 0 0 100px 0;
-}
-.generic ul li{
-   width: 22%;
-   border: 0.5px solid #C4C4C4;
-  }
+.generic ul { display: flex; }
+.generic ul li:not(:last-child){margin-right: 5%;}
 
-.generic li figure{ 
+.generic ul li {
+  width: 22%;
+  border: 0.5px solid #C4C4C4;
+  padding: 30px 0;
+}
+
+.generic li figure {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.generic figure img{ 
+.generic figure img {
   width: 60%;
   border-radius: 90px;
-  margin: 42px 0 20px 0;
 }
 
-.generic span{ 
+.generic span {
   display: block;
   text-align: center;
   line-height: 1.5;
 }
-.generic span:last-child{ padding: 0 0 50px 0;}
+
 /* generic section style end */
 /* Element section style start */
-.elements{ 
-  padding: 0 0 90px;
+
+.elements {
+  padding: 90px 0 90px;
   border-bottom: 1px solid #c4c4c5;
 }
 
-.elements ul{ 
+.elements ul {
   display: flex;
   justify-content: space-between;
 }
 
-.elements ul li{ width: 47%;}
+.elements ul li {
+  width: 47%;
+}
 
-.elements h4{padding: 100px 0 10px 0;}
+.elements h4 {
+  padding: 0 0 10px 0;
+}
 
-.elements span{
+.elements span {
   display: block;
-   text-align: center;
-   padding: 0 0 60px 0;
-  }
+  text-align: center;
+  padding: 0 0 60px 0;
+}
 
-  .elements li figure{ padding: 0 0 30px 0;}
+.elements li figure {
+  padding: 0 0 30px 0;
+}
 
-  .elements h5{ font-size: 25px;}
+.elements h5 {
+  font-size: 25px;
+}
 
-  .elements li p{
-    padding: 20px 0;
-    line-height: 1.3;
-  }
+.elements li p {
+  padding: 20px 0;
+  line-height: 1.3;
+}
+
 /* Element section style end */
 
 /*=================================
@@ -315,386 +489,530 @@ div h2{
 
 /*=================================
   footer styling starts here
-=================================*/ 
+=================================*/
 
-footer{ padding: 30px 0 ;}
+footer {
+  padding: 30px 0;
+}
 
 footer .wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-footer p{ 
+footer p {
   font-size: 10px;
-  LINE-HEIGHT: 1.5;
+  line-height: 1.5;
 }
 
-.socialmedia a::before{
+.socialmedia a::before {
   font-family: "fontAwesome";
- text-indent: 0;
- float: left;
+  text-indent: 0;
+  float: left;
 }
 
-.socialmedia a{
+.socialmedia a {
   text-indent: -9999px;
   float: left;
   padding: 0 5px;
   transition: 0.2s;
 }
-.socialmedia a:hover{ color: #000;}
-.socialmedia a[title="Facebook"]::before{ content:"\f09a" ;}
-.socialmedia a[title="Twitter"]::before{ content:"\f099" ;}
-.socialmedia a[title="Linkedin"]::before{ content:"\f08c" ;}
-.socialmedia a[title="Pininterest"]::before{ content:"\f0d2" ;}
-.socialmedia a[title="Vimeo"]::before{ content:"\f194" ;}
- /*=================================
-  footer styling ends here
-=================================*/ 
 
-/*media query starts*/
-/* media query for 1440px starts here */
-@media only screen and (max-width: 1440px) {
-  /* common class style starts */
-  .font-sizee{ font-size: 19px;}
-
-.h4{
-  font-size: 44px;
-  text-align: center;
+.socialmedia a:hover {
+  color: #000;
 }
 
-.font-size-20 { font-size: 21px; }
-  /* common class style ends */
-  /* header section style start */
-  
-  header{ 
-    width: 100%;
-    min-height: 500px;
-  }
-  
+.socialmedia a[title="Facebook"]::before {
+  content: "\f09a";
+}
 
-  .structure{
-    padding: 56px 0 60px 0;
-    justify-content: space-between;
-    display: flex;
+.socialmedia a[title="Twitter"]::before {
+  content: "\f099";
+}
+
+.socialmedia a[title="Linkedin"]::before {
+  content: "\f08c";
+}
+
+.socialmedia a[title="Pininterest"]::before {
+  content: "\f0d2";
+}
+
+.socialmedia a[title="Vimeo"]::before {
+  content: "\f194";
+}
+
+/*=================================
+  footer styling ends here
+=================================*/
+
+/*media query starts*/
+
+/* media query for 1440px starts here */
+
+@media only screen and (max-width: 1440px) {
+
+  /* common class style starts */
+  .font-sizee {
+    font-size: 19px;
   }
-  
-  .structure h1{ 
-    font-weight: bold;
+
+  .h4 {
+    font-size: 44px;
+    text-align: center;
+  }
+
+  .font-size-20 {
+    font-size: 21px;
+  }
+
+  /* common class style ends */
+
+  /* header section style start */
+
+  .structure h1 {
     font-size: 28px;
   }
 
-  .structure h1 a{ padding: 8px;}
-  
-  nav li a{  padding: 15px 24px; }
+  nav li a {
+    padding: 15px 24px;
+  }
 
-  div h2{
+  div h2 {
     padding: 0 0 32px 0;
     font-size: 55px;
-    text-align: center;
   }
-  /* header section style ends */
-  /* main section start */
-  /* home section style start */
-  .home{ padding: 90px 0 90px 0;}
 
-.home div h3{
-  width: 58%;
+  /* header section style ends */
+
+  /* main section start */
+
+  /* home section style start */
+
+  .home {
+    padding: 90px 0 90px 0;
+  }
+
+  .home div h3 {
     line-height: 1.3;
     font-size: 24px;
-}  
+  }
 
-.home div p{
-  width: 85%;
-  padding: 20px 0 20px 0;
-  font-size: 17px;
-  line-height: 1.6;
-}
+  .home div p {
+    width: 85%;
+    padding: 20px 0 20px 0;
+    font-size: 17px;
+    line-height: 1.6;
+  }
 
-.button a{
-  padding: 12px 18px;
-  font-size: 15px;
-  border: 1px solid #fff;
-}
+  .button a {
+    padding: 12px 18px;
+    font-size: 15px;
+    border: 1px solid #fff;
+  }
 
   /* home section style end */
-  /* main section end */
-  /* footer section style start */
-  footer{ padding: 40px 0 ;}
 
-  footer p{ 
+  /* main section end */
+
+  /* footer section style start */
+
+  footer {
+    padding: 40px 0;
+  }
+
+  footer p {
     font-size: 14px;
     LINE-HEIGHT: 1.5;
   }
 
-  .socialmedia a{
+  .socialmedia a {
     padding: 0 8px;
   }
+
   /* footer section style end */
-} 
+}
+
 /* media query for 1440px ends here */
 
 /* media query for 1024px starts */
-@media only screen and (max-width:1024px) {
-  /* media query for 1024px starts */
-.font-sizee{ font-size: 15px;}
 
-.h4{
-  font-size: 31px;
-  text-align: center;
-}
-/* common class style end */
-/*=================================
+@media only screen and (max-width:1024px) {
+
+  /* media query for 1024px starts */
+
+  .font-sizee {
+    font-size: 15px;
+  }
+
+  .h4 {
+    font-size: 31px;
+  }
+
+  /* common class style end */
+
+  /*=================================
   Header styling starts here
 =================================*/
 
-header{ 
-  width: 100%;
-  min-height: 425px;
-}
-
-.structure{
-  padding: 45px 0 65px 0;
-  justify-content: space-between;
-  display: flex;
-}
-
-.structure h1{ 
-  font-weight: bold;
-  font-size: 19px;
-}
-
-.structure h1 a{ padding: 4px; }
-nav li a{  padding: 5px 18px; }
-
-div h2{
-  padding: 0 0 30px 0;
-  font-size: 46px;
-  text-align: center;
-}
-
-/*=================================
-  Header styling ends here
-=================================*/ 
-/*=================================
-  main styling starts here
-=================================*/
-
-/* home section style start */
-
-.home{ padding: 60px 0 60px 0;}
-.home ul li:not(:first-child){ padding: 0 0 0 30px; }
-
-.home div h3{
-  line-height: 1.2;
-  font-size: 18px;
-}  
-
-.home div p{
-  width: 85%;
-  padding: 18px 0 18px 0;
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-.button a{
-  padding: 8px 13px;
-  font-size: 14px;
-  border: 1px solid #fff;
-}
-
-/* home section style end */
-/* generic section style start */
-
-.generic h4{  padding: 70px 0 13px 0; }
-.genericspan1{  padding: 0 0 40px 0; }
-.generic ul{  padding: 0 0 80px 0; }
-
-.generic ul li{
-   width: 22%;
-   border: 0.5px solid #C4C4C4;
+  .structure h1 {
+    font-size: 19px;
   }
 
-.generic figure img{  margin: 40px 0 15px 0;}
-.generic span{  line-height: 1.3; }
-.generic span:last-child{ padding: 0 0 40px 0;}
+  .structure h1 a {
+    padding: 4px;
+  }
 
-/* generic section style end */
-/* Element section style start */
-.elements{ padding: 0 0 80px; }
-.elements h4{padding: 90px 0 8px 0;}
-.elements span{ padding: 0 0 50px 0; }
-.elements li figure{ padding: 0 0 25px 0;}
-.elements h5{ font-size: 18px;}
+  nav li a {
+    padding: 5px 18px;
+  }
 
-.elements li p{
- padding: 18px 0;
- line-height: 1.3;
-}
-/* Element section style end */
+  div h2 {
+    padding: 0 0 30px 0;
+    font-size: 46px;
+  }
 
-/*=================================
+  /*=================================
+  Header styling ends here
+=================================*/
+  /*=================================
+  main styling starts here
+=================================*/
+  /* banner section style start */
+
+.banner { min-height: 350px; }
+
+/* banner section style end */
+  /* home section style start */
+
+  .home {
+    padding: 60px 0 60px 0;
+  }
+
+  .home ul li:not(:first-child) {
+    padding: 0 0 0 30px;
+  }
+
+  .home div h3 {
+    line-height: 1.2;
+    font-size: 18px;
+  }
+
+  .home div p {
+    width: 85%;
+    padding: 18px 0 18px 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .button a {
+    padding: 8px 13px;
+    font-size: 14px;
+    border: 1px solid #fff;
+  }
+
+  /* home section style end */
+
+  /* generic section style start */
+
+  .generic h4 {
+    padding: 70px 0 13px 0;
+  }
+
+  .genericspan1 {
+    padding: 0 0 40px 0;
+  }
+
+  .generic ul {
+    padding: 0 0 80px 0;
+  }
+
+  .generic ul li {
+    width: 22%;
+    border: 0.5px solid #C4C4C4;
+  }
+
+  .generic span {
+    line-height: 1.3;
+  }
+
+
+  /* generic section style end */
+
+  /* Element section style start */
+
+  .elements {
+    padding: 0 0 80px;
+  }
+
+  .elements h4 {
+    padding: 80px 0 8px 0;
+  }
+
+  .elements span {
+    padding: 0 0 50px 0;
+  }
+
+  .elements li figure {
+    padding: 0 0 25px 0;
+  }
+
+  .elements h5 {
+    font-size: 18px;
+  }
+
+  .elements li p {
+    padding: 18px 0;
+    line-height: 1.3;
+  }
+
+  /* Element section style end */
+
+  /*=================================
   main styling ends here
 =================================*/
-/*=================================
+  /*=================================
   footer styling starts here
-=================================*/ 
+=================================*/
 
-footer{ padding: 20px 0 ;}
+  footer {
+    padding: 20px 0;
+  }
 
-footer p{ 
-  font-size: 12px;
-  LINE-HEIGHT: 1.3;
-}
+  footer p {
+    font-size: 12px;
+    LINE-HEIGHT: 1.3;
+  }
 
-.socialmedia a{ padding: 0 4px; }
- /*=================================
+  .socialmedia a {
+    padding: 0 4px;
+    font-size: 20px;
+  }
+
+  /*=================================
   footer styling ends here
-=================================*/ 
+=================================*/
 }
 
 /* media query for 1024px ends */
 
+/*media query for min 768px starts here*/
 
-/*media query for 768px starts here*/
+@media only screen and (min-width){
+  /* hover style start */
+}
+
+/*media query for min 768px ends here*/
+
+/*media query for max 768px starts here*/
 @media only screen and (max-width: 768px) {
-  /* common class start */
-  .font-sizee{ font-size: 15px;}
-  /* common class end */
-  /* header style start */
-  header{  min-height: 350px; }
-  nav{display: none;}
 
-  .hamburger{
+  /* common class start */
+
+  .font-sizee {
+    font-size: 15px;
+  }
+
+  /* common class end */
+
+  /* header style start */
+
+  nav { display: none; }
+
+  .hamburger {
     width: 5%;
     display: block;
   }
-
-  div h2{ padding: 0 0 20px 0; }
-  /* header style end */
-  /* ============================= */
-  /* main section style start */
-  /* home section stayle start */
-  .home{ padding: 50px 0 50px 0;}
-  .home ul{ flex-wrap: wrap; }
-
-  .home ul li:not(:first-child){
-    border-top: 1px solid #C4C4C4; 
-    border-left: 0;
-   }
-
-   .home ul li:not(:first-child){ padding: 20px 0 0 0; }
-   .home ul li:not(:last-child){ padding: 0 0 20px 0; }
-   .secondli{ padding: 20px 0 0 0; }
-
-.home div h3{ 
-  width: 100%; 
-  text-align: center;
-  font-size: 25px;
-}  
-
-.home div p{
-  width: 100%;
-  padding: 20px 0 20px 0;
-  font-size: 15px;
-  line-height: 1.3;
-  text-align: center;
-}
-
-.button a{
-  width: 95%;
-  padding: 11px 11px;
-  font-size: 16px;
-  border: 1px solid #fff;
-  text-align: center;
-}
-
-.button a:hover{
-  border: 1px solid #000;
-  background: #fff;
-  color: #5386C1;
-}
-  /* home section style end */
-  /* generic section style start */
-
-.generic h4{  padding: 40px 0 10px 0; }
-
-.genericspan1{ 
-   padding: 0 0 20px 0;
-   font-size: 16px;
+  .hamburger:hover { cursor: pointer; }
+  div h2 {
+    padding: 0 0 20px 0;
   }
 
-.generic ul{  padding: 0 0 40px 0;}
-.generic ul{flex-direction: column;}
+  /* header style end */
+  /* ============================= */
 
-.generic ul li{
-  width: 100%;
-   margin: 0 0 30px;
-}
+    /* banner section style start */
 
-.generic figure img{ 
-  width: 40%;
-  border-radius: 125px;
-  margin: 50px 0 32px 0;
-}
+.banner { min-height: 310px; }
 
-.generic span:last-child{ padding: 0 0 48px 0;}
+/* banner section style end */
 
-/* generic section style end */
-/* Element section style start */
+  /* main section style start */
 
-.elements{ padding: 0 0 8px; }
-.elements ul{ flex-direction: column; }
+  /* home section stayle start */
 
-.elements ul li{ 
-  width: 100%;
-  margin: 0 0 35px 0;
-}
+  .home {
+    padding: 50px 0 50px 0;
+  }
 
-.elements h4{padding: 40px 0 10px 0;}
-.elements span{ padding: 0 0 35px 0; }
-.elements li figure{ padding: 0 0 35px 0;}
+  .home ul {
+    flex-wrap: wrap;
+  }
 
-.elements h5{ 
-  font-size: 19px;
-  text-align: center;
-}
+  .home ul li:not(:first-child) {
+    border-top: 1px solid #C4C4C4;
+    border-left: 0;
+  }
 
-  .elements li p{
+  .home ul li:not(:first-child) {
+    padding: 20px 0 0 0;
+  }
+
+  .home ul li:not(:last-child) {
+    padding: 0 0 20px 0;
+  }
+
+  .secondli {
+    padding: 20px 0 0 0;
+  }
+
+  .home div h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 20px;
+  }
+
+  .home div p {
+    width: 100%;
+    padding: 20px 0 20px 0;
+    font-size: 15px;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .button a {
+    width: 95%;
+    padding: 11px 11px;
+    font-size: 16px;
+    border: 1px solid #fff;
+    text-align: center;
+  }
+
+  .button a:hover {
+    border: 1px solid #000;
+    background: #fff;
+    color: #5386C1;
+  }
+
+.secondli{padding-top: 20px;}
+
+  /* home section style end */
+
+  /* generic section style start */
+
+  .generic h4 {
+    padding: 40px 0 10px 0;
+  }
+
+  .genericspan1 {
+    padding: 0 0 20px 0;
+    font-size: 16px;
+  }
+
+  .generic ul {
+    padding: 0 0 40px 0;
+  }
+
+  .generic ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .generic ul li {
+    width: 70%;
+    margin: 0 0 30px;
+  }
+  
+  .generic ul li:not(:last-child) { margin-right: 0; }
+
+  .generic figure img {
+    width: 65%;
+    border-radius: 125px;
+   
+  }
+
+
+  /* generic section style end */
+
+  /* Element section style start */
+
+  .elements {
+    padding: 0 0 8px;
+  }
+
+  .elements ul {
+    flex-direction: column;
+  }
+
+  .elements ul li {
+    width: 100%;
+    margin: 0 0 35px 0;
+  }
+
+  .elements h4 {
+    padding: 40px 0 10px 0;
+  }
+
+  .elements span {
+    padding: 0 0 35px 0;
+  }
+
+  .elements li figure {
+    padding: 0 0 35px 0;
+  }
+
+  .elements h5 {
+    font-size: 19px;
+    text-align: center;
+  }
+
+  .elements li p {
     padding: 35px 0;
     line-height: 1.3;
     text-align: center;
   }
-/* Element section style end */
 
-/*=================================
+  /* Element section style end */
+
+  /*=================================
   main styling ends here
 =================================*/
-/*=================================
+  /*=================================
   footer styling starts here
-=================================*/ 
+=================================*/
 
-footer{ padding: 30px 0 25px 0;}
+  footer {
+    padding: 30px 0 25px 0;
+  }
 
-footer .wrapper {
-  display: flex;
-  flex-direction: column-reverse;
-  width: 100%;
-  align-items: center;
+  footer .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+  }
+
+  footer p {
+    font-size: 12px;
+    LINE-HEIGHT: 1.5;
+  }
+
+  footer div ul {
+    padding: 0 0 20px 0;
+  }
+
 }
 
-footer p{ 
-  font-size: 12px;
-  LINE-HEIGHT: 1.5;
-}
-footer div ul{ padding: 0 0 20px 0;}
-}
 /*=================================
   footer styling ends here
-=================================*/ 
+=================================*/
 
- 
+
 /*media query for 768px ends here*/
 /*media query for 480px ends here*/
-@media only screen and (max-width: 480px){
- div h2{ font-size: 4px; }
+@media only screen and (max-width: 480px) {
+  div h2 {
+    font-size: 45px;
+  }
 }
